@@ -1,3 +1,26 @@
+# Fork created by Tattle
+
+Inference steps for Rawnet2
+
+## Installation
+
+First, clone the repository locally, create and activate a conda environment, and install the requirements :
+```
+$ git clone https://github.com/asvspoof-challenge/2021.git
+$ cd 2021/LA/Baseline-RawNet2/
+$ conda create --name rawnet_anti_spoofing python=3.6.10
+$ conda activate rawnet_anti_spoofing
+$ conda install pytorch
+$ pip install -r requirements.txt
+```
+
+For inference
+```shell
+python3 inference.py --input_path='path_to_audio_dir' --model_path='path_to_checkpoint'
+```
+Note: You can find pretrained weights [here](https://datashare.is.ed.ac.uk/handle/10283/3336).
+
+
 # ASVspoof 2021 Baseline CM & Evaluation Package
 
 By [ASVspoof2021 challenge organizers](https://www.asvspoof.org/)
